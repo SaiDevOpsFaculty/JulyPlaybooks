@@ -1,0 +1,9 @@
+---
+- name: My Test Playbook
+  hosts: all
+  become: true
+  tasks:
+  - name: Creating a file
+    file: 
+      path: /home/ansadmin/demofile
+      state: touch

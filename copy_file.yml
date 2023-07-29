@@ -1,0 +1,11 @@
+---
+- name: My Test Playbook
+  hosts: all
+  become: true
+  tasks:
+  - name: Copy a file
+    copy: 
+      src: /home/ansadmin/sai.html
+      dest: /home/ansadmin
+      mode: 0600
+      owner: Rohit
